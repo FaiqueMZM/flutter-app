@@ -18,14 +18,41 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.brown[800],
         centerTitle: true,
       ),
-      body: Text(
-        'Hello Flutter!',
-        style: TextStyle(
-          fontSize: 24,
-          color: Colors.brown[700],
-          fontWeight: FontWeight.w600,
-        ),
-        textAlign: TextAlign.center,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.brown[400],
+            alignment: Alignment.center,
+            child: const Text(
+              'Column 1',
+              style: TextStyle(fontSize: 24, color: Colors.white),
+            ),
+          ),
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.brown[300],
+            alignment: Alignment.center,
+            child: const Text(
+              'Column 2',
+              style: TextStyle(fontSize: 24, color: Colors.white),
+            ),
+          ),
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.brown[200],
+            alignment: Alignment.center,
+            child: const Text(
+              'Column 3',
+              style: TextStyle(fontSize: 24, color: Colors.white),
+            ),
+          ),
+        ],
       ),
     );
   }
