@@ -52,6 +52,35 @@ class Home extends StatelessWidget {
               style: TextStyle(fontSize: 24, color: Colors.white),
             ),
           ),
+          Container(
+            width: 350,
+            height: 250,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  width: 175,
+                  height: 250,
+                  color: Colors.brown[50],
+                  alignment: Alignment.center,
+                  child: Image.asset(
+                    'assets/imgs/sample-profile.png',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                Container(
+                  width: 175,
+                  height: 250,
+                  color: Colors.brown[50],
+                  alignment: Alignment.center,
+                  child: Image.asset(
+                    'assets/imgs/sample-image.webp',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
