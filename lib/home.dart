@@ -43,16 +43,6 @@ class Home extends StatelessWidget {
             ),
           ),
           Container(
-            width: 100,
-            height: 100,
-            color: Colors.brown[200],
-            alignment: Alignment.center,
-            child: const Text(
-              'Column 3',
-              style: TextStyle(fontSize: 24, color: Colors.white),
-            ),
-          ),
-          Container(
             width: 350,
             height: 250,
             child: Row(
@@ -76,6 +66,13 @@ class Home extends StatelessWidget {
                   child: Image.asset(
                     'assets/imgs/sample-image.webp',
                     fit: BoxFit.cover,
+                  ),
+                ),
+                Expanded(
+                  child: Image.asset(
+                    'assets/imgs/sample-image.png',
+                    fit: BoxFit.fitWidth,
+                    alignment: Alignment.center,
                   ),
                 ),
               ],
